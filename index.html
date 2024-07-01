@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient and Appointment Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Patient and Appointment Management</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+            <li><a href="#" onclick="showSection('patients')">Patients</a></li>
+            <li><a href="#" onclick="showSection('appointments')">Appointments</a></li>
+            <li><a href="#" onclick="showSection('user-management')">User Management</a></li>
+            <li><a href="#" onclick="showSection('role-management')">Role Management</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Welcome to the Patient and Appointment Management System</p>
+        </section>
+        <section id="patients" style="display:none;">
+            <h2>Patients</h2>
+            <div id="patient-list"></div>
+            <button onclick="addPatient()">Add Patient</button>
+        </section>
+        <section id="appointments" style="display:none;">
+            <h2>Appointments</h2>
+            <div id="appointment-list"></div>
+            <button onclick="addAppointment()">Add Appointment</button>
+        </section>
+        <section id="user-management" style="display:none;">
+            <h2>User Management</h2>
+            <div id="user-list"></div>
+            <button onclick="addUser()">Add User</button>
+        </section>
+        <section id="role-management" style="display:none;">
+            <h2>Role Management</h2>
+            <div id="role-list"></div>
+            <button onclick="addRole()">Add Role</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Patient and Appointment Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
